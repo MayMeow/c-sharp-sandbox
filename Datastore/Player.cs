@@ -5,6 +5,10 @@ using Datastore.Inventory;
 
 namespace Datastore
 {
+    /// <summary>
+    /// Player Character
+    /// Its has everything from NPC and adding Backpack and Level
+    /// </summary>
     public class Player : NonPlayerPerson
     {
         public int Level { get; set; }

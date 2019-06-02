@@ -9,10 +9,15 @@ namespace XmlSerialization
 {
     class Program
     {
+        /// <summary>
+        /// Shows how Xml Serialization works
+        /// </summary>
         static void Main()
         {
             Console.WriteLine("XML Serialization Example");
 
+            // Create data to serialize
+            // See the Body idem can be placed in body or in inventory ;)
             Player player = new Player()
             {
                 Body = new Body {Name = "Armor +1", Type = "Leather armor"},
@@ -34,6 +39,7 @@ namespace XmlSerialization
                 MaxDmb = 4
             });
 
+            // Serialize data and write them to console
             XmlSerializer xs = new XmlSerializer(typeof(Player), new Type[]
             {
                 typeof(Weapon),

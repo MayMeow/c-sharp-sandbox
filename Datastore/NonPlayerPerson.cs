@@ -5,6 +5,9 @@ using Datastore.Inventory;
 
 namespace Datastore
 {
+    /// <summary>
+    /// NPC - Non player characters
+    /// </summary>
     public class NonPlayerPerson
     {
         public string Name { get; set; }
